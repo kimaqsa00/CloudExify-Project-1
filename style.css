@@ -1,13 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
-/* --- SKIN DYNAMIC ACCENT MATRIX --- */
 .color-red    { --main-color: #ec1839; }
 .color-orange { --main-color: #fa5b0f; }
 .color-green  { --main-color: #37b182; }
 .color-blue   { --main-color: #1854b4; }
 .color-pink   { --main-color: #f3187b; }
 
-/* --- CORE THEME ROOT MATRIX (DARK & LIGHT VARIABLES) --- */
 body.dark-mode {
     --bg-color: #151515;
     --sidebar-bg: #1f1f1f;
@@ -46,8 +44,6 @@ body {
 
 * { box-sizing: border-box; margin: 0; padding: 0; text-decoration: none; border: none; outline: none; }
 img { content-visibility: auto; }
-
-/* --- SYSTEM REAL-TIME SKELETON PRELOADER LAYER --- */
 #preloader-skeleton { position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: var(--bg-color); z-index: 5000; display: flex; transition: opacity 0.4s ease, visibility 0.4s ease; }
 #preloader-skeleton.fade-away { opacity: 0; visibility: hidden; pointer-events: none; }
 .skel-sidebar { width: 240px; height: 100vh; background: var(--sidebar-bg); border-right: 1px solid var(--border-color); }
@@ -62,7 +58,6 @@ img { content-visibility: auto; }
 
 @keyframes skel-shimmer { 0% { transform: translateX(-100%); } 100% { transform: translateX(100%); } }
 
-/* --- SIDEBAR & BRAND LOGO WITH BRACKETS --- */
 .yt-sidebar { position: fixed; top: 0; left: 0; width: 240px; height: 100vh; background: var(--sidebar-bg); border-right: 1px solid var(--border-color); padding: 3rem 1.5rem; display: flex; flex-direction: column; z-index: 100; transition: background 0.3s ease, border-color 0.3s ease; }
 .brand-box { margin-bottom: 3.5rem; text-align: center; width: 100%; display: flex; justify-content: center; }
 
@@ -76,7 +71,6 @@ img { content-visibility: auto; }
 .nav-link-btn { display: flex; align-items: center; gap: 1.2rem; font-size: 1rem; font-weight: 500; color: var(--text-muted); padding: 0.8rem 1rem; border-radius: 8px; cursor: pointer; background: transparent; width: 100%; text-align: left; transition: all 0.2s ease; }
 .nav-link-btn:hover, .nav-link-btn.active { font-weight: 600; color: var(--main-color); background: rgba(120, 120, 120, 0.06); }
 
-/* --- FLOATING SWITCHER LAYOUT --- */
 .style-switcher { position: fixed; right: 30px; top: 30px; z-index: 1001; display: flex; flex-direction: column; align-items: flex-end; gap: 12px; }
 .style-switcher-toggler, .style-switcher-secondary { background: var(--panel-bg); border: 1px solid var(--border-color); width: 45px; height: 45px; display: flex; align-items: center; justify-content: center; border-radius: 50%; cursor: pointer; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); transition: transform 0.2s ease, background 0.2s, border-color 0.3s; }
 .style-switcher-toggler:hover, .style-switcher-secondary:hover { transform: scale(1.05); }
@@ -92,7 +86,6 @@ img { content-visibility: auto; }
 .color-dot:hover { transform: scale(1.15); }
 .color-dot.active { border-color: var(--text-color); transform: scale(1.1); }
 
-/* --- PANELS VIEW --- */
 .content-frame { margin-left: 240px; flex-grow: 1; min-height: 100vh; background: var(--bg-color); transition: background 0.3s ease; }
 .app-panel { display: none; padding: 4.5rem 5.5rem; min-height: 100vh; }
 .app-panel.active-view { display: block; animation: panelFadeIn 0.35s cubic-bezier(0.25, 1, 0.5, 1) forwards; }
@@ -103,7 +96,6 @@ img { content-visibility: auto; }
 .section-title::before { content: ''; position: absolute; bottom: -10px; left: 0; width: 55px; height: 3px; background: var(--main-color); transition: background 0.3s; }
 .section-title::after { content: ''; position: absolute; bottom: -17px; left: 0; width: 35px; height: 3px; background: var(--main-color); transition: background 0.3s; }
 
-/* --- HERO WRAPPERS & AVATAR --- */
 .hero-wrapper { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 4rem; align-items: center; min-height: 75vh; }
 .hero-text h1 { font-size: 3.5rem; font-weight: 800; line-height: 1.2; color: var(--text-color); }
 .highlight-name { color: var(--main-color); transition: color 0.3s; }
@@ -122,7 +114,6 @@ img { content-visibility: auto; }
 .avatar-frame { width: 100%; aspect-ratio: 1/1; background: var(--panel-bg); overflow: hidden; border: 1px solid var(--border-color); display: flex; align-items: center; justify-content: center; box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1); transition: background 0.3s, border-color 0.3s; }
 .responsive-img { width: 100%; height: 100%; object-fit: cover; display: block; }
 
-/* --- ABOUT MATRIX --- */
 .about-intro-block { margin-bottom: 3rem; }
 .about-subtitle { font-size: 1.6rem; font-weight: 700; margin-bottom: 1rem; color: var(--text-color); }
 .accent-text { color: var(--main-color); transition: color 0.3s; }
@@ -135,7 +126,6 @@ img { content-visibility: auto; }
 .meta-cell span { color: var(--hero-para-color); font-size: 0.95rem; transition: color 0.3s; }
 .about-action-btns { display: flex; gap: 1.2rem; margin-top: 2.5rem; align-items: center; }
 
-/* --- SKILLS PROGRESS --- */
 .skills-column-block { display: flex; flex-direction: column; width: 100%; }
 .skills-box { display: flex; flex-direction: column; gap: 1.8rem; width: 100%; }
 .skill-item { display: flex; flex-direction: column; gap: 0.5rem; }
@@ -147,7 +137,6 @@ img { content-visibility: auto; }
 .active-view .fill-js { width: 90%; transition: width 1.2s cubic-bezier(0.4, 0, 0.2, 1); }
 .active-view .fill-responsive { width: 85%; transition: width 1.2s cubic-bezier(0.4, 0, 0.2, 1); }
 
-/* --- TIMELINE --- */
 .timeline-container { display: grid; grid-template-columns: 1fr 1fr; gap: 3.5rem; margin-top: 5rem; border-top: 1px solid var(--border-color); padding-top: 4rem; transition: border-color 0.3s; }
 .timeline-column { display: flex; flex-direction: column; }
 .timeline-header-title { font-size: 1.5rem; font-weight: 700; margin-bottom: 2.5rem; color: var(--text-color); }
@@ -158,7 +147,6 @@ img { content-visibility: auto; }
 .timeline-card h4 { font-size: 1.15rem; font-weight: 700; color: var(--text-color); }
 .timeline-text { color: var(--hero-para-color); font-size: 0.95rem; line-height: 1.6; margin-top: 0.5rem; transition: color 0.3s; }
 
-/* --- SERVICES & PORTFOLIO --- */
 .services-grid, .portfolio-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 1rem; }
 .service-card { background: var(--panel-bg); padding: 3rem 2rem; border-radius: 12px; border: 1px solid var(--border-color); text-align: center; transition: transform 0.2s, border-color 0.3s, background 0.3s; }
 .service-card:hover { transform: translateY(-4px); border-color: var(--main-color); }
@@ -173,7 +161,6 @@ img { content-visibility: auto; }
 .portfolio-info { padding: 1.2rem; text-align: center; }
 .portfolio-info h4 { font-size: 1.1rem; font-weight: 600; color: var(--text-color); }
 
-/* --- CONTACT --- */
 .contact-header-block { text-align: center; margin-bottom: 3rem; }
 .contact-prompt-title { font-size: 1.5rem; font-weight: 700; color: var(--main-color); letter-spacing: 0.5px; text-transform: uppercase; transition: color 0.3s; }
 .contact-subprompt { font-size: 0.85rem; font-weight: 600; color: var(--text-color); margin-top: 0.5rem; letter-spacing: 1px; }
@@ -189,10 +176,8 @@ img { content-visibility: auto; }
 .contact-form textarea { border-radius: 20px; resize: none; }
 .contact-form input:focus, .contact-form textarea:focus { border-color: var(--main-color); background: var(--bg-color); }
 
-/* Centering layout rule for Send Message element wrapper block */
 .form-submit-wrapper { display: flex; justify-content: center; width: 100%; }
 
-/* Form Success Status Message Animations & Colors */
 .form-status-msg { 
     text-align: center; 
     margin-top: 1.5rem; 
@@ -206,8 +191,6 @@ img { content-visibility: auto; }
     color: var(--success-color);
     transform: scale(1);
 }
-
-/* --- RESPONSIVE BREAKPOINTS --- */
 @media (max-width: 1200px) {
     .services-grid, .portfolio-grid { grid-template-columns: repeat(2, 1fr); }
     .contact-info-row { grid-template-columns: repeat(2, 1fr); }
