@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K.Aqsa | Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="color-orange dark-mode">
+
+    <div id="preloader-skeleton">
+        <div class="skel-sidebar"></div>
+        <div class="skel-main">
+            <div class="skel-line title"></div>
+            <div class="skel-line p1"></div>
+            <div class="skel-line p2"></div>
+            <div class="skel-grid">
+                <div class="skel-card"></div>
+                <div class="skel-card"></div>
+                <div class="skel-card"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="style-switcher">
+        <div class="style-switcher-toggler" id="switcherToggle">
+            <span class="gear-icon">⚙️</span>
+        </div>
+        <div class="style-switcher-secondary" id="themeModeToggle" title="Toggle Light/Dark Mode">
+            <span class="mode-icon" id="modeIcon">🌙</span>
+        </div>
+        <div class="colors-palette-panel" id="colorsPanel">
+            <h4>Theme Colors</h4>
+            <div class="colors-palette">
+                <span class="color-dot" data-color="color-red" style="background: #ec1839;" title="Red"></span>
+                <span class="color-dot active" data-color="color-orange" style="background: #fa5b0f;" title="Orange"></span>
+                <span class="color-dot" data-color="color-green" style="background: #37b182;" title="Green"></span>
+                <span class="color-dot" data-color="color-blue" style="background: #1854b4;" title="Blue"></span>
+                <span class="color-dot" data-color="color-pink" style="background: #f3187b;" title="Pink"></span>
+            </div>
+        </div>
+    </div>
+
+    <aside class="yt-sidebar">
+        <div class="brand-box">
+            <div class="logo-corner-frame">
+                <div class="brand-logo"><span>K.</span>AQSA</div>
+            </div>
+        </div>
+        <ul class="nav-menu">
+            <li><button class="nav-link-btn active" data-target="home-panel"><span class="nav-icon">🏠</span><span class="nav-text">Home</span></button></li>
+            <li><button class="nav-link-btn" data-target="about-panel"><span class="nav-icon">👤</span><span class="nav-text">About</span></button></li>
+            <li><button class="nav-link-btn" data-target="services-panel"><span class="nav-icon">📋</span><span class="nav-text">Services</span></button></li>
+            <li><button class="nav-link-btn" data-target="portfolio-panel"><span class="nav-icon">💼</span><span class="nav-text">Portfolio</span></button></li>
+            <li><button class="nav-link-btn" data-target="contact-panel"><span class="nav-icon">💬</span><span class="nav-text">Contact</span></button></li>
+        </ul>
+    </aside>
+
+    <main class="content-frame">
+
+        <section id="home-panel" class="app-panel active-view">
+            <div class="hero-wrapper">
+                <div class="hero-text">
+                    <h1>Hi, I'm <br><span class="highlight-name">Aqsa Sanaullah</span></h1>
+                    <div class="typed-wrapper">I'm <span id="typedText"></span><span class="cursor">|</span></div>
+                    <p class="hero-p">I build minimal, high-performance web components with native, modular foundations. My focus remains on generating zero-dependency UI architectures that match extreme performance benchmarks flawlessly.</p>
+                    <div class="hero-btns-row">
+                        <button class="btn switch-trigger" data-dest="about-panel">More About Me</button>
+                    </div>
+                </div>
+                <div class="avatar-container">
+                    <div class="avatar-frame">
+                        <img src="https://i.pinimg.com/736x/45/9b/3f/459b3f203b55e26088e6ec747e15ea07.jpg" alt="Aqsa Sanaullah" class="responsive-img" loading="eager">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about-panel" class="app-panel">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-intro-block">
+                <h3 class="about-subtitle">I'm Aqsa Sanaullah and <span class="accent-text">Web Solution Engineer</span></h3>
+                <p class="about-description">I build minimal, high-performance web components with native, modular foundations with focus on pristine user experiences.</p>
+            </div>
+            <div class="about-split-grid">
+                <div class="info-column-block">
+                    <div class="meta-info-grid">
+                        <div class="meta-row"><div class="meta-cell"><strong>Birthday:</strong> <span>20 April 2006</span></div></div>
+                        <div class="meta-row"><div class="meta-cell"><strong>Age:</strong> <span>20 Years</span></div></div>
+                        <div class="meta-row"><div class="meta-cell"><strong>City:</strong> <span>Narowal</span></div></div>
+                        <div class="meta-row"><div class="meta-cell"><strong>Email:</strong> <span>kimaqsa763@gmail.com</span></div></div>
+                        <div class="meta-row"><div class="meta-cell"><strong>Phone:</strong> <span>+92 305 8139998</span></div></div>
+                        <div class="meta-row"><div class="meta-cell"><strong>Freelance:</strong> <span>Available</span></div></div>
+                    </div>
+                    <div class="about-action-btns">
+                        <a href="assets/Aqsa_Sanaullah_CV.pdf" download="Aqsa_Sanaullah_CV.pdf" class="btn btn-round">Download CV</a>
+                        <button class="btn btn-round switch-trigger" data-dest="contact-panel">Hire Me</button>
+                    </div>
+                </div>
+                <div class="skills-column-block">
+                    <div class="skills-box">
+                        <div class="skill-item">
+                            <div class="skill-label"><span>HTML / CSS Layout Layers</span><span class="val-txt">95%</span></div>
+                            <div class="progress-bar"><div class="progress-fill fill-html"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-label"><span>Vanilla JavaScript Logic</span><span class="val-txt">90%</span></div>
+                            <div class="progress-bar"><div class="progress-fill fill-js"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-label"><span>Responsive Architecture Spacing</span><span class="val-txt">85%</span></div>
+                            <div class="progress-bar"><div class="progress-fill fill-responsive"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-container">
+                <div class="timeline-column">
+                    <h3 class="timeline-header-title">Education</h3>
+                    <div class="timeline-track">
+                        <div class="timeline-card">
+                            <div class="time-stamp">📅 2026 - Present</div>
+                            <h4>Bachelor In Computer Science</h4>
+                            <p class="timeline-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                        <div class="timeline-card">
+                            <div class="time-stamp">📅 2022 - 2024</div>
+                            <h4>Intermediate in Computer Science (ICS)</h4>
+                            <p class="timeline-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-column">
+                    <h3 class="timeline-header-title">Experience</h3>
+                    <div class="timeline-track">
+                        <div class="timeline-card">
+                            <div class="time-stamp">📅 2026 - Active</div>
+                            <h4>Frontend Solutions Intern</h4>
+                            <p class="timeline-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                        <div class="timeline-card">
+                            <div class="time-stamp">📅 2025 - 2026</div>
+                            <h4>UI/UX Layout Designer</h4>
+                            <p class="timeline-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services-panel" class="app-panel">
+            <h2 class="section-title">Services</h2>
+            <div class="services-grid">
+                <div class="service-card"><div class="service-icon">📱</div><h4>Web Design</h4><p class="service-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div>
+                <div class="service-card"><div class="service-icon">💻</div><h4>Web Development</h4><p class="service-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div>
+                <div class="service-card"><div class="service-icon">🎨</div><h4>Graphic UI</h4><p class="service-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div>
+                <div class="service-card"><div class="service-icon">&lt;/&gt;</div><h4>Clean Code</h4><p class="service-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div>
+                <div class="service-card"><div class="service-icon">🔍</div><h4>SEO Audit</h4><p class="service-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div>
+                <div class="service-card"><div class="service-icon">📢</div><h4>Digital Marketing</h4><p class="service-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p></div>
+            </div>
+        </section>
+
+        <section id="portfolio-panel" class="app-panel">
+            <h2 class="section-title">Portfolio</h2>
+            <h3 class="portfolio-subtitle">My Last Projects :</h3>
+            <div class="portfolio-grid">
+                <div class="portfolio-card"><img src="https://i.pinimg.com/736x/3c/ac/b9/3cacb94b5b99ded99ac9d3dfabd1f679.jpg" alt="Project 1" class="portfolio-img" loading="lazy"><div class="portfolio-info"><h4>PSD Template Design</h4></div></div>
+                <div class="portfolio-card"><img src="https://i.pinimg.com/1200x/5d/a7/29/5da7297e51dd8b07bf4d040b893fcb8a.jpg" alt="Project 2" class="portfolio-img" loading="lazy"><div class="portfolio-info"><h4>WordPress Development</h4></div></div>
+                <div class="portfolio-card"><img src="https://cdn.dribbble.com/users/49803/screenshots/6366399/pixel_logo_design_4x.jpg" alt="Project 3" class="portfolio-img" loading="lazy"><div class="portfolio-info"><h4>Momo Pixel Branding</h4></div></div>
+                <div class="portfolio-card"><img src="https://i.pinimg.com/736x/e3/6a/6d/e36a6d1defdde5cb78d13d6d4b7b8831.jpg" alt="Project 4" class="portfolio-img" loading="lazy"><div class="portfolio-info"><h4>Food Industry Solution</h4></div></div>
+                <div class="portfolio-card"><img src="https://i.pinimg.com/1200x/40/13/8a/40138aca7db7f1104c77e2ac386dee8d.jpg" alt="Project 5" class="portfolio-img" loading="lazy"><div class="portfolio-info"><h4>Digital Illustration Hub</h4></div></div>
+                <div class="portfolio-card"><img src="https://i.pinimg.com/736x/a7/b7/a6/a7b7a6d38a992667b8af19f52599b52b.jpg" alt="Project 6" class="portfolio-img" loading="lazy"><div class="portfolio-info"><h4>E-Commerce Architecture</h4></div></div>
+            </div>
+        </section>
+
+        <section id="contact-panel" class="app-panel">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="contact-header-block">
+                <h3 class="contact-prompt-title">Have You Any Questions?</h3>
+                <p class="contact-subprompt">I'M AT YOUR SERVICE</p>
+            </div>
+            <div class="contact-info-row">
+                <div class="info-cell"><div class="info-icon">📞</div><h5>Call Us On</h5><p>+92 305 8139998</p></div>
+                <div class="info-cell"><div class="info-icon">📍</div><h5>Location</h5><p>Narowal, Pakistan</p></div>
+                <div class="info-cell"><div class="info-icon">✉️</div><h5>Email</h5><p>kimaqsa763@gmail.com</p></div>
+                <div class="info-cell"><div class="info-icon">🌐</div><h5>Freelance</h5><p>Available</p></div>
+            </div>
+            <div class="contact-header-block" style="margin-top: 4rem;">
+                <h3 class="contact-prompt-title">SEND ME AN EMAIL</h3>
+                <p class="contact-subprompt">I'M VERY RESPONSIVE TO MESSAGES</p>
+            </div>
+            <form id="contactForm" class="contact-form">
+                <div class="form-row-split">
+                    <input type="text" name="username" placeholder="Name" required>
+                    <input type="email" name="useremail" placeholder="Email" required>
+                </div>
+                <input type="text" name="subject" placeholder="Subject" required>
+                <textarea name="message" rows="6" placeholder="Message" required></textarea>
+                
+                <div class="form-submit-wrapper">
+                    <button type="submit" class="btn btn-round">Send Message</button>
+                </div>
+            </form>
+            
+            <div id="formStatus" class="form-status-msg"></div>
+        </section>
+
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
