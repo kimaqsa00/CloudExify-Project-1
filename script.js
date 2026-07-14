@@ -1,8 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-    
-    // ==========================================
-    // PAGE-LOAD SKELETON ANIMATION
-    // ==========================================
     const preloader = document.getElementById("preloader-skeleton");
     if (preloader) {
         window.addEventListener("load", () => {
@@ -12,9 +8,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // ==========================================
-    // STYLE SWITCHER POPOVER TOGGLE ENGINE
-    // ==========================================
     const switcherToggle = document.getElementById("switcherToggle");
     const colorsPanel = document.getElementById("colorsPanel");
 
@@ -31,9 +24,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // ==========================================
-    // FIXED DEFAULT ORANGE ACCENT MATRIX
-    // ==========================================
     const colorDots = document.querySelectorAll(".color-dot");
     const defaultColorClass = "color-orange";
     
@@ -60,10 +50,6 @@ document.addEventListener("DOMContentLoaded", () => {
             document.body.classList.add(targetColor);
         });
     });
-
-    // ==========================================
-    // DARK/LIGHT MODE CHANGER ENGINE
-    // ==========================================
     const themeModeToggle = document.getElementById("themeModeToggle");
     const modeIcon = document.getElementById("modeIcon");
 
@@ -81,9 +67,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // ==========================================
-    // NAVIGATION PANEL ROUTING SYSTEM
-    // ==========================================
     const navButtons = document.querySelectorAll(".nav-link-btn");
     const panels = document.querySelectorAll(".app-panel");
     const inlineTriggers = document.querySelectorAll(".switch-trigger");
@@ -121,10 +104,6 @@ document.addEventListener("DOMContentLoaded", () => {
             activatePanel(dest);
         });
     });
-
-    // ==========================================
-    // TYPED EFFECTS ENGINE FOR HERO TEXT
-    // ==========================================
     const strings = ["Computer Science Student", "Information Security Analyst", "Frontend UI Architect"];
     let strIdx = 0, charIdx = 0;
     const targetElement = document.getElementById("typedText");
@@ -153,24 +132,17 @@ document.addEventListener("DOMContentLoaded", () => {
     
     if(targetElement) typeEffect();
 
-    // ==========================================
-    // CONTACT FORM SUCCESS SUBMISSION LOGIC (MOCK)
-    // ==========================================
     const contactForm = document.getElementById("contactForm");
     const formStatus = document.getElementById("formStatus");
 
     if (contactForm && formStatus) {
         contactForm.addEventListener("submit", (e) => {
-            e.preventDefault(); // Page reload hone se rokne ke liye
-
-            // Success message content aur color styling apply karna
+            e.preventDefault(); 
             formStatus.textContent = "Your Message has been sent successfully! ✓";
             formStatus.className = "form-status-msg success-show";
 
-            // Form key saari input fields clear karna
             contactForm.reset();
 
-            // 4 seconds baad automatic notification message hide karne ke liye
             setTimeout(() => {
                 formStatus.className = "form-status-msg";
                 formStatus.textContent = "";
